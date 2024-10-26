@@ -54,10 +54,10 @@ The objective of the analysis of **Menlo Therapeutics Stocks** is to predict the
 ### Iris Flower Classification
 <img width="312" alt="overview data" src="https://github.com/user-attachments/assets/40117692-6ddd-46ea-a2e7-6c1056d09fe3">
 The dataset above is about classifying three species of iris flowers based on: 
-####-Sepal Length 
-####-Sepal Width
-####-Petal Length 
-####-Petel Width
+#### -Sepal Length 
+#### -Sepal Width
+#### -Petal Length 
+#### -Petel Width
 
   At face value, we can observe that different species of irises can fall into a certain range of measurements on their petals and sepals however, these values can be identical and can appear again for other classifications which is why we will utilize Logistic Regression to carefully predict these outputs compared to simply using human analytical skills. This dataset has been assigned to be performed on Logistic Regression therefore its output should be a string or a classification that is not described in quantity or numerical values. 
   It is important to note that Logistic Regression is not limited to predicting only two outputs (Yes or No) which is why it is useful for machine learning in categorizing a set of parameters in this case, there must be three possible outputs for the predictions namely: Iris-setosa, Iris-versicolor, and Iris-virginica

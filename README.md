@@ -43,12 +43,15 @@ Below is the preview of the dataset to be used in **linear regression**
 
 ## **Objective**
 
-The objective of the analysis of **Menlo Therapeutics Stocks** is to predict the closing value of stock price of Menlo Therapeutics and test the prediction accuracy of using linear regression based on the following parameters;
+The objective of the analysis of **Menlo Therapeutics Stocks** is to predict the closing value of stock price of Menlo Therapeutics by using **Linear Regression**, create and train the model and test the prediction accuracy of using linear regression by computing for the **R-Squared**, **Adjusted R-Squared**, an **Mean Squared Error** based on the following parameters;
 - Opening stock price of the day
 - Highest/peak stock price of the day
 - Low/valley stock price of the day and
 - Volume of exchanges in the given timeframe
 
+
+## **Linear Regression Analysis**
+### Menlo Therapeutics Stock
 
 
 ## **Logistics Reggression Analysis**

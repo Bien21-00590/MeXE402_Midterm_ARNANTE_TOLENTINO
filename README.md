@@ -40,21 +40,6 @@ Below is the preview of the dataset to be used in **linear regression**
 ![Screenshot 2024-10-20 090813](https://github.com/user-attachments/assets/ed8b1609-8424-428b-bb3b-115aa1f2e63d)
 
 
-
-## **Objective**
-### Menlo Therapeutics Stock
-  The objective of the analysis of **Menlo Therapeutics Stocks** is to predict the closing value of stock price of Menlo Therapeutics by using **Linear Regression**, create and train the model and test the prediction accuracy of using linear regression by computing for the **R-Squared**, **Adjusted R-Squared**, an **Mean Squared Error** based on the following parameters;
-- Opening stock price of the day
-- Highest/peak stock price of the day
-- Low/valley stock price of the day and
-- Volume of exchanges in the given timeframe
-
-### Iris Flower Classification
-  It is important to note that Logistic Regression is not limited to predicting only two outputs (Yes or No) which is why it is useful for machine learning in categorizing a set of parameters in this case:
-1. We must be able to predict three possible outputs namely: Iris-setosa, Iris-versicolor, and Iris-virginica
-2. Create and train a model for prediction.
-3. Construct a confusion matrix as well as determine its accuracy.
-
 ## **Linear Regression Analysis**
 ### Menlo Therapeutics Stock
 ![Screenshot 2024-10-18 181654](https://github.com/user-attachments/assets/b09cc0b7-4e9f-43a4-9eaa-a8b3804a9872)

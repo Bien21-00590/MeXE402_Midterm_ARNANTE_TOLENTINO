@@ -28,3 +28,24 @@ Where:
 - And β1​,β2​,...βn​ are coefficient of the independent variable
 
 Applications for this kind of regression are disease prediction, yes or no output or any binary outcomes
+
+
+## Dataset Description
+### Menlo Therapeutics Stocks
+
+This dataset is about the stock price of Menlo Therapeutics from January 25, 2018 to April 1, 2020. The **open** column is the opening stock price, the **high** column is the highest stock price of that day, the **low** column is the lowest price of that day, the **close** column is the stock price in the end of the day, the **adj close** is the adjusted value of the close value and volume is the number of shares or contracts **traded** in that timeframe.
+
+Below is the preview of the dataset to be used in **linear regression**
+![Screenshot 2024-10-20 090813](https://github.com/user-attachments/assets/ed8b1609-8424-428b-bb3b-115aa1f2e63d)
+
+### Iris Flower Classification
+
+
+## Objective
+
+The objective of the analysis of Menlo Therapeutics Stocks is to predict the closing value of stock price of Menlo Therapeutics and test the prediction accuracy of using linear regression based on the following parameters;
+- Opening stock price of the day
+- Highest/peak stock price of the day
+- Low/valley stock price of the day and
+- Volume of exchanges in the given timeframe
+

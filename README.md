@@ -1,7 +1,7 @@
 # MeXE402_Midterm_ARNANTE_TOLENTINO
 This is our Midterm Activity for Electives 2 - Machine Learning using Linear Regression and Logistic Regression for datasets about Stock Market and Iris Classification respsectively.
 
-## Introduction
+## **Introduction**
 Overview Of Linear and Logistics Regression
 
 **Linear regression** is a statistical method used for modeling the relationship between a dependent variable and one or more independent variables by fitting a linear equation to observed data. It's used for prediction and understanding relationships between variables. The equation for this regression is
@@ -30,7 +30,7 @@ Where:
 Applications for this kind of regression are disease prediction, yes or no output or any binary outcomes
 
 
-## Dataset Description
+## **Dataset Description**
 ### Menlo Therapeutics Stocks
 
 This dataset is about the stock price of Menlo Therapeutics from January 25, 2018 to April 1, 2020. The **open** column is the opening stock price, the **high** column is the highest stock price of that day, the **low** column is the lowest price of that day, the **close** column is the stock price in the end of the day, the **adj close** is the adjusted value of the close value and volume is the number of shares or contracts **traded** in that timeframe.
@@ -41,11 +41,35 @@ Below is the preview of the dataset to be used in **linear regression**
 ### Iris Flower Classification
 
 
-## Objective
+## **Objective**
 
-The objective of the analysis of Menlo Therapeutics Stocks is to predict the closing value of stock price of Menlo Therapeutics and test the prediction accuracy of using linear regression based on the following parameters;
+The objective of the analysis of **Menlo Therapeutics Stocks** is to predict the closing value of stock price of Menlo Therapeutics and test the prediction accuracy of using linear regression based on the following parameters;
 - Opening stock price of the day
 - Highest/peak stock price of the day
 - Low/valley stock price of the day and
 - Volume of exchanges in the given timeframe
+
+
+
+## **Linear Reggression Analysis**
+
+### Data Preprocessing
+
+### Model Implementation
+
+### Evaluation Metrics
+
+### Interpretation
+
+
+## **Logistics Reggression Analysis**
+
+
+## Documentation
+
+### Methodology
+
+### Results
+
+### Discussion
 

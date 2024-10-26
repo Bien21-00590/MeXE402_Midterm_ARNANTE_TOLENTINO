@@ -50,7 +50,7 @@ The objective of the analysis of **Menlo Therapeutics Stocks** is to predict the
 
 
 
-## **Linear Reggression Analysis**
+## **Logistics Reggression Analysis**
 ### **Iris Flower Classification**
 <img width="311" alt="dataset preview" src="https://github.com/user-attachments/assets/119c949b-03f2-401a-be8c-88668dde355b">
 

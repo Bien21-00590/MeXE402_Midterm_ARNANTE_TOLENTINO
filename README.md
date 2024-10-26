@@ -38,7 +38,6 @@ This dataset is about the stock price of Menlo Therapeutics from January 25, 201
 Below is the preview of the dataset to be used in **linear regression**
 ![Screenshot 2024-10-20 090813](https://github.com/user-attachments/assets/ed8b1609-8424-428b-bb3b-115aa1f2e63d)
 
-### Iris Flower Classification
 
 
 ## **Objective**
@@ -52,8 +51,19 @@ The objective of the analysis of **Menlo Therapeutics Stocks** is to predict the
 
 
 ## **Linear Reggression Analysis**
+### Iris Flower Classification
+<img width="312" alt="overview data" src="https://github.com/user-attachments/assets/40117692-6ddd-46ea-a2e7-6c1056d09fe3">
+The dataset above is about classifying three species of iris flowers based on: 
+####-Sepal Length 
+####-Sepal Width
+####-Petal Length 
+####-Petel Width
 
+  At face value, we can observe that different species of irises can fall into a certain range of measurements on their petals and sepals however, these values can be identical and can appear again for other classifications which is why we will utilize Logistic Regression to carefully predict these outputs compared to simply using human analytical skills. This dataset has been assigned to be performed on Logistic Regression therefore its output should be a string or a classification that is not described in quantity or numerical values. 
+  It is important to note that Logistic Regression is not limited to predicting only two outputs (Yes or No) which is why it is useful for machine learning in categorizing a set of parameters in this case, there must be three possible outputs for the predictions namely: Iris-setosa, Iris-versicolor, and Iris-virginica
 ### Data Preprocessing
+  The csv file for Iris classification contains the following columns: Id, Sepal Length, Sepal Width, Petal Length, Petal Width, and Species. The Id column can be excluded for data machine learning since it only serves as a column number and has no significant impact on data prediction. This column will be later excluded in training and prediction via this line of code.
+<img width="754" alt="drop" src="https://github.com/user-attachments/assets/2c03dca0-37d7-476d-9449-0bd46ca09eb2">
 
 ### Model Implementation
 

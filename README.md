@@ -42,17 +42,37 @@ Below is the preview of the dataset to be used in **linear regression**
 
 
 ## **Objective**
-
-The objective of the analysis of **Menlo Therapeutics Stocks** is to predict the closing value of stock price of Menlo Therapeutics by using **Linear Regression**, create and train the model and test the prediction accuracy of using linear regression by computing for the **R-Squared**, **Adjusted R-Squared**, an **Mean Squared Error** based on the following parameters;
+### Menlo Therapeutics Stock
+  The objective of the analysis of **Menlo Therapeutics Stocks** is to predict the closing value of stock price of Menlo Therapeutics by using **Linear Regression**, create and train the model and test the prediction accuracy of using linear regression by computing for the **R-Squared**, **Adjusted R-Squared**, an **Mean Squared Error** based on the following parameters;
 - Opening stock price of the day
 - Highest/peak stock price of the day
 - Low/valley stock price of the day and
 - Volume of exchanges in the given timeframe
 
+### Iris Flower Classification
+  It is important to note that Logistic Regression is not limited to predicting only two outputs (Yes or No) which is why it is useful for machine learning in categorizing a set of parameters in this case:
+1. We must be able to predict three possible outputs namely: Iris-setosa, Iris-versicolor, and Iris-virginica
+2. Create and train a model for prediction.
+3. Construct a confusion matrix as well as determine its accuracy.
 
 ## **Linear Regression Analysis**
 ### Menlo Therapeutics Stock
+![Screenshot 2024-10-18 181654](https://github.com/user-attachments/assets/b09cc0b7-4e9f-43a4-9eaa-a8b3804a9872)
 
+The dataset above is the Menlo Therapeutics Stock prices and number of exchanges from January 25, 2018 to April 1, 2020. The open column is the opening stock price, the high column is the highest stock price of that day, the low column is the lowest price of that day, the close column is the stock price in the end of the day, the adj close is the adjusted value of the close value and volume is the number of shares or contracts traded in that timeframe.
+
+### Objectives
+
+  The objective of the analysis of **Menlo Therapeutics Stocks** is to predict the closing value of the stock price of Menlo Therapeutics by using **Linear Regression**, create and train the model and test the prediction accuracy of using linear regression by computing for the **R-Squared**, **Adjusted R-Squared**, and **Mean Squared Error** based on the following parameters;
+  
+#### - Opening stock price of the day
+#### - Highest/peak stock price of the day
+#### - Low/valley stock price of the day and
+#### - Volume of exchanges in the given timeframe
+
+### Data Preprocessing
+
+### Data Showcasing
 
 ## **Logistics Reggression Analysis**
 ### **Iris Flower Classification**
@@ -63,13 +83,17 @@ The dataset above is about classifying three species of iris flowers based on:
 #### -Sepal Width
 #### -Petal Length 
 #### -Petal Width
+
   At face value, we can observe that different species of irises can fall into a certain range of measurements on their petals and sepals however, these values can be identical and can appear again for other classifications which is why we will utilize Logistic Regression to carefully predict these outputs compared to simply using human analytical skills. This dataset has been assigned to be performed on Logistic Regression therefore its output should be a string or a classification that is not described in quantity or numerical values. 
-  
-### **Objective**
+
+
+### Objectives
+
   It is important to note that Logistic Regression is not limited to predicting only two outputs (Yes or No) which is why it is useful for machine learning in categorizing a set of parameters in this case:
 1. We must be able to predict three possible outputs namely: Iris-setosa, Iris-versicolor, and Iris-virginica
 2. Create and train a model for prediction.
 3. Construct a confusion matrix as well as determine its accuracy.
+
   
 ### **Data Preprocessing**
 
@@ -107,7 +131,7 @@ The dataset above is about classifying three species of iris flowers based on:
 ### Interpretation
 
 
-## Documentation
+### Documentation
 
 
 ### Results

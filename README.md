@@ -5,6 +5,7 @@ This is our Midterm Activity for Electives 2 - Machine Learning using Linear Reg
 Overview Of Linear and Logistics Regression
 
 **Linear regression** is a statistical method used for modeling the relationship between a dependent variable and one or more independent variables by fitting a linear equation to observed data. It's used for prediction and understanding relationships between variables. The equation for this regression is
+
 ![Screenshot 2024-10-20 082542](https://github.com/user-attachments/assets/ccee4100-8a31-4cd9-8828-c32fd4df4a4d)
 
 

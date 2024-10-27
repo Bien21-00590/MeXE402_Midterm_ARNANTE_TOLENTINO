@@ -77,7 +77,24 @@ After cleaning and arranging the dataset to be used , it is now ready for coding
 
 ### Data Showcasing
 
+![full plot](https://github.com/user-attachments/assets/616da86f-f9ed-40fc-aac1-5e7faddc1bf8)
 
+The plot above show the linearity relationship of each independent variable to the dependent variable. Based on the plots, the volume has the worst linearity relationship to the dependent variable due to being negative exponential related instead of a positive linear relation which mean that this could be a factor that affect the prediction of the model.
+
+### Model Preparation
+
+
+
+### Model Implementation
+
+
+### Evaluation Metrics
+
+
+### Interpretation
+
+
+### Discussion of Results
 
 
 
@@ -105,10 +122,12 @@ The dataset above is about classifying three species of iris flowers based on:
 ### **Data Preprocessing**
 
   The csv file for Iris classification contains the following columns: Id, Sepal Length, Sepal Width, Petal Length, Petal Width, and Species. The Id column can be excluded for data machine learning since it only serves as a column number and has no significant impact on data prediction. This column will be later excluded in training and prediction via this line of code.
+  
 <img width="754" alt="drop" src="https://github.com/user-attachments/assets/2c03dca0-37d7-476d-9449-0bd46ca09eb2">
 
 
 ### **Data Showcasing**
+
 <img width="715" alt="sepal" src="https://github.com/user-attachments/assets/ed9785fe-8216-492b-a452-b70d008bed62">
 <img width="716" alt="Petal" src="https://github.com/user-attachments/assets/f137755f-1ee7-4c94-962e-e705e1cdfafc">
   
@@ -116,16 +135,22 @@ The dataset above is about classifying three species of iris flowers based on:
 
 ### Model Preparation
   In order to properly perform Logistic Regression we must let our model know which parameters are its input and which should be the output. Our input will be Sepal Length, Sepal Width, Petal Length, and Petal Width. While our output will be Iris-setosa, Iris-versicolor, and Iris-virginica
+  
   <img width="755" alt="spearate" src="https://github.com/user-attachments/assets/0ff3da50-e544-4698-98c9-e5203a3fe112">
+  
   Next is that we must StandardScaler, standard scaler removes the mean and scaling to unit variance. This makes the values in the data much more easier to have a correlation for the model to learn.
+  
   <img width="755" alt="standard scaler" src="https://github.com/user-attachments/assets/7b823ff0-ebc0-4aaa-a1f3-8031bd633df4">
 
 ### Model Implementation
   In this section it is now time to create the model using the prepared dataset using the code shown below
+  
   <img width="746" alt="creating the model" src="https://github.com/user-attachments/assets/49b88e6f-3ff6-474e-85ab-0e4c79316450">
+ 
   the "max_iter=200" means that this model will have 200 iterations for our Logistic Regression.
 ### Evaluation Metrics
  <img width="761" alt="model prediction" src="https://github.com/user-attachments/assets/6784de19-a0b0-4007-a414-36ef31a6d6f3">
+  
   After successfully creating the model and making it predict, it will now be evaluated on the following parameters:
   
 **precision** - measures the accuracy of positive predictions.
@@ -139,10 +164,7 @@ The dataset above is about classifying three species of iris flowers based on:
 ### Interpretation
 
 
-### Documentation
-
-
-### Results
+### Discussion of Results
 
 
 

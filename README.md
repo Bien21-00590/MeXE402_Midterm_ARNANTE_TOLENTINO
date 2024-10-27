@@ -31,18 +31,9 @@ Where:
 Applications for this kind of regression are disease prediction, yes or no output or any binary outcomes
 
 
-## **Dataset Description**
-### Menlo Therapeutics Stocks
-
-This dataset is about the stock price of Menlo Therapeutics from January 25, 2018 to April 1, 2020. The **open** column is the opening stock price, the **high** column is the highest stock price of that day, the **low** column is the lowest price of that day, the **close** column is the stock price in the end of the day, the **adj close** is the adjusted value of the close value and volume is the number of shares or contracts **traded** in that timeframe.
-
-Below is the preview of the dataset to be used in **linear regression**
-![Screenshot 2024-10-20 090813](https://github.com/user-attachments/assets/ed8b1609-8424-428b-bb3b-115aa1f2e63d)
-
-
 ## **Linear Regression Analysis**
 ### Menlo Therapeutics Stock
-![Screenshot 2024-10-18 181654](https://github.com/user-attachments/assets/b09cc0b7-4e9f-43a4-9eaa-a8b3804a9872)
+![Screenshot 2024-10-20 090813](https://github.com/user-attachments/assets/8f55bb91-8ac8-4a87-8995-1409470ae1b5)
 
 The dataset above is the Menlo Therapeutics Stock prices and number of exchanges from January 25, 2018 to April 1, 2020. The open column is the opening stock price, the high column is the highest stock price of that day, the low column is the lowest price of that day, the close column is the stock price in the end of the day, the adj close is the adjusted value of the close value and volume is the number of shares or contracts traded in that timeframe.
 
@@ -56,8 +47,39 @@ The dataset above is the Menlo Therapeutics Stock prices and number of exchanges
 #### - Volume of exchanges in the given timeframe
 
 ### Data Preprocessing
+#### Cleaning The Dataset
+
+The Figure 1.a is the overall data of stock prices of Menlo Therapeutics and the date recorded.
+
+![Screenshot 2024-10-18 181654](https://github.com/user-attachments/assets/a471f718-564f-4230-8f24-1739546a9ee1)
+(Figure 1.a)
+
+The prediction that we are going to make is the close value of the stock price since according to Investopedia [2], Volume is an important indicator in technical analysis because it measures the relative significance of a market move. The higher the volume during a price move, the more significant the move; the lower the volume during a price move, the less significant the move. 
+Based on that, moving the close column to the last to serve as the dependent variable on Figure 1.b.
+
+![Screenshot 2024-10-18 181725](https://github.com/user-attachments/assets/2cc7d3a2-05cd-4239-815f-1d850613d0ad)
+(Figure 1.b)
+
+Taking a closer look, the adjusted close is similar to the close so a comparison test is then made on Figure 1.c. According to Groww [3], closing price simply refers to the cost of shares at the end of the day, the adjusted closing price takes dividends, stock splits, and new stock offerings.
+
+![Screenshot 2024-10-18 181931](https://github.com/user-attachments/assets/40a75f28-38ef-4c8a-a1c7-e5f5886ee02d)
+(Figure 1.c)
+
+After verifying that the close and adjusted close are exactly the same, we simply remove the adjusted close column because it is not in our independent variable. 
+
+![Screenshot 2024-10-18 182003](https://github.com/user-attachments/assets/ebc3f1c7-e359-4e61-8998-bba2ebcbcda1)
+(Figure 1.d)
+
+After cleaning and arranging the dataset to be used , it is now ready for coding 
+
+![Screenshot 2024-10-18 182100](https://github.com/user-attachments/assets/3c814e91-6ffc-4c54-801d-3f88ad8fe500)
+(Figure 1.e)
 
 ### Data Showcasing
+
+
+
+
 
 ## **Logistics Reggression Analysis**
 ### **Iris Flower Classification**

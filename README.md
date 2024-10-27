@@ -79,13 +79,11 @@ After cleaning and arranging the dataset to be used , it is now ready for coding
 
 ![full plot](https://github.com/user-attachments/assets/616da86f-f9ed-40fc-aac1-5e7faddc1bf8)
 
-The plot above show the linearity relationship of each independent variable to the dependent variable. Based on the plots, the volume has the worst linearity relationship to the dependent variable due to being negative exponential related instead of a positive linear relation which mean that this could be a factor that affect the prediction of the model.
-
-### Model Preparation
-
+The plot above show the linearity relationship of each independent variable to the dependent variable. Based on the plots, the volume has the worst linearity relationship to the dependent variable due to being negative exponential related instead of a positive linear relation which mean that this could be a factor that affect the prediction of the model. Additionally from observation that there are only few outlier values which in theory will not affect the model that much.
 
 
 ### Model Implementation
+
 
 
 ### Evaluation Metrics

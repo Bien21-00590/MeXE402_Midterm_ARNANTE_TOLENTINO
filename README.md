@@ -111,6 +111,7 @@ The dataset above is about classifying three species of iris flowers based on:
 ### **Data Showcasing**
 <img width="715" alt="sepal" src="https://github.com/user-attachments/assets/ed9785fe-8216-492b-a452-b70d008bed62">
 <img width="716" alt="Petal" src="https://github.com/user-attachments/assets/f137755f-1ee7-4c94-962e-e705e1cdfafc">
+  
   These histograms showcase the range and frequency of values for each descriptive column. Additionally, these values are obtained or created for the application of machine learning and as assigned by our instructor, Logistic Regression, therefore using the first 4 descriptive columns we must be able to predict the 5th column which is the output or 'Species' 
 
 ### Model Preparation

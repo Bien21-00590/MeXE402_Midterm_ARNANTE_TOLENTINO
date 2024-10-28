@@ -83,17 +83,42 @@ The plot above show the linearity relationship of each independent variable to t
 
 
 ### Model Implementation
+The figure below is all the necessary libraries, modules and class to be used in this dataset and its functions. 
 
+![Screenshot 2024-10-28 092757](https://github.com/user-attachments/assets/e06c5a34-352e-4fc5-ab76-524ef1d1c62b)
 
+### Evaluation Metrics and Interpretation
+#### R-Squared & Adj R-Squared
+Below is the computation for the R-Squared which results in 0.9991818280984028 and the adjusted R-Squared
 
-### Evaluation Metrics
+![image](https://github.com/user-attachments/assets/53d9fd7e-318c-4332-aaa4-2aa8e4e68db3)
+![image](https://github.com/user-attachments/assets/d2a1c8bb-0fbf-4aa0-9396-b1ff1bbcaae2)
 
+Based on the evaluation of metrics results, the R-Squared score of 0.999181828098402 means that the model is either very good or suspicious. The score itself is very close to one which makes it questionable but it also is in the range where we can say that the model is reliable.
 
-### Interpretation
+#### Means Squared Error(MSE)
+We also calculated the MSE to get the average squared difference of the predicted and actual outputs.
+![image](https://github.com/user-attachments/assets/e6ab55fb-89d7-4b91-983a-aedcfb15e2c7)
 
+The Means Squared Error resulted in 0.04613760646767291 means that there is very little differece in the predicted.
+
+#### Noisy Model
+Since the interpretation of the reslut in R-Squared is suspicious enought, we add noise to the dataset that way it can lower the R-Squared. The figure below is the addition of 1.5 noise level in the dataset.
+
+![image](https://github.com/user-attachments/assets/a5c5bd79-055c-4e86-85d7-d745bdbd12cf)
+
+After that, we trained and tested the model anew and calculate for the noised R-Squared and MSE:
+
+![image](https://github.com/user-attachments/assets/438a8e92-d780-4169-9090-6165e928be93)
+![image](https://github.com/user-attachments/assets/3d64531f-0494-4455-8dee-6211efc98407)
+
+Based on the result of the noised R-Squared and MSE, it now result to be a reliable model getting a score on R-Squared varying from 0.96 - 0.94 and a score of MSE of 1.7 - 3. Due to the introduction of the noise, the results varies every calculation unlike the clean dataset in whiche there are no randomness introduced.
 
 ### Discussion of Results
 
+The linear regression model fits good in this stock price prediction as it results in a highly accurate prediction, though it may seem queationable to to the analyist who may use this but it is undeniable that the prediction power of this model in this specific dataset is very good.
+
+Moreoover, the addition of the noise in the dataset makes the result better because it is not that high. While adding noise can be useful for testing model robustness or simulating real-world scenarios like this stock price prediction, it makes the dataset less reliable. If the goal is to build a model for practical use, it's generally best to work with clean, high-quality data.
 
 
 ## **Logistics Reggression Analysis**

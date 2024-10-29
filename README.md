@@ -77,7 +77,8 @@ After cleaning and arranging the dataset to be used , it is now ready for coding
 
 ### Data Showcasing
 
-![full plot](https://github.com/user-attachments/assets/616da86f-f9ed-40fc-aac1-5e7faddc1bf8)
+![image](https://github.com/user-attachments/assets/2c2c1140-33a2-4405-a066-7e8ddb19aec4)
+
 
 The plot above show the linearity relationship of each independent variable to the dependent variable. Based on the plots, the volume has the worst linearity relationship to the dependent variable due to being negative exponential related instead of a positive linear relation which mean that this could be a factor that affect the prediction of the model. Additionally from observation that there are only few outlier values which in theory will not affect the model that much.
 
@@ -114,12 +115,17 @@ After that, we trained and tested the model anew and calculate for the noised R-
 
 Based on the result of the noised R-Squared and MSE, it now result to be a reliable model getting a score on R-Squared varying from 0.96 - 0.94 and a score of MSE of 1.7 - 3. Due to the introduction of the noise, the results varies every calculation unlike the clean dataset in whiche there are no randomness introduced.
 
+We can also see the difference of actual and noised data against the predicted values in the figures below:
+
+![image](https://github.com/user-attachments/assets/5038af1c-b682-40e7-ba7a-0f3e28035944)
+![image](https://github.com/user-attachments/assets/16a4d985-9f7c-4d2d-9a06-2724bc0acade)
+
+Though the predicted output may be almost similar in both plots they are different enough if you look at the codes. This makes the model even more suspicious even though it is noised, it does not change the predicted output that much.
 ### Discussion of Results
 
 The linear regression model fits good in this stock price prediction as it results in a highly accurate prediction, though it may seem queationable to to the analyist who may use this but it is undeniable that the prediction power of this model in this specific dataset is very good.
 
-Moreoover, the addition of the noise in the dataset makes the result better because it is not that high. While adding noise can be useful for testing model robustness or simulating real-world scenarios like this stock price prediction, it makes the dataset less reliable. If the goal is to build a model for practical use, it's generally best to work with clean, high-quality data.
-
+Moreoover, the addition of the noise in the dataset makes the result better because it is not that high but the model became more suspicious as the predicted values does not change that  muchor in shorter term, the noise almost didn't affect the predicted output. While adding noise can be useful for testing model robustness or simulating real-world scenarios like this stock price prediction, it makes the dataset less reliable. If the goal is to build a model for practical use, it's generally best to work with clean, high-quality data.
 
 ## **Logistics Reggression Analysis**
 ### **Iris Flower Classification**

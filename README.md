@@ -168,7 +168,7 @@ The dataset above is about classifying three species of iris flowers based on:
 
 ### **Data Preprocessing**
 
-  The csv file for Iris classification contains the following columns: Id, Sepal Length, Sepal Width, Petal Length, Petal Width, and Species. To inspect the data without alternating with other programs that view datasetes, we can use commands data.info or dataset.head or even similar commands to view datasets on vscode itself however, through this method we can only observe a shortened overview of the dataset
+  The csv file for Iris classification contains the following columns: Id, Sepal Length, Sepal Width, Petal Length, Petal Width, and Species. To inspect the data without alternating with other programs that view datasets, we can use commands data.info or dataset.head or even similar commands to view datasets on vscode itself however, through this method we can only observe a shortened overview of the dataset
 
 <img width="747" alt="display data" src="https://github.com/user-attachments/assets/f6b305ab-9e09-4e1d-ae43-fc515b6d17b4">
 <img width="754" alt="display info" src="https://github.com/user-attachments/assets/d20dbd14-2a7c-4f61-b448-6b7197e06870">
@@ -177,7 +177,7 @@ The dataset above is about classifying three species of iris flowers based on:
 
 <img width="715" alt="histograms" src="https://github.com/user-attachments/assets/ef7e1d47-344e-4cfb-843d-eb223d8582a2">
 
-These histograms showcase the range and frequency of values for each descriptive column. On observation, there are commonalities for each classification and some key differences on the histograms shown which hyothetically, provide variations and unepredictability when simply done through human guessing which is then done otherwise by the succeeding training model.
+These histograms showcase the range and frequency of values for each descriptive column. On observation, there are commonalities for each classification and some key differences on the histograms shown which hypthetically, provide variations and unpredictability when simply done through human guessing which is then done otherwise by the succeeding training model.
 
 ### Model Implementation
 

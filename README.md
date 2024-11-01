@@ -5,9 +5,9 @@ This is our Midterm Activity for Electives 2 - Machine Learning using Linear Reg
 Overview Of Linear and Logistics Regression
 
 **Linear regression** is a statistical method used for modeling the relationship between a dependent variable and one or more independent variables by fitting a linear equation to observed data. It's used for prediction and understanding relationships between variables. The equation for this regression is
-
-![Screenshot 2024-10-20 082542](https://github.com/user-attachments/assets/ccee4100-8a31-4cd9-8828-c32fd4df4a4d)
-
+<div align="center">
+<img src="https://github.com/user-attachments/assets/ccee4100-8a31-4cd9-8828-c32fd4df4a4d">
+</div>
 
 Where:
 - Y is the dependent variable or the output
@@ -20,7 +20,9 @@ Applications for this kind of regression are predicting outcomes that are contin
 
 
 **Logistic regression** on the other hand is used for predicting the probability of a binary outcome. Unlike linear regression, which predicts continuous values, logistic regression models a binary dependent variable. The equation for this regression is
-![Screenshot 2024-10-20 084038](https://github.com/user-attachments/assets/c66c5b76-c0e0-47b2-9bb5-87f9f11aa3d1)
+<div align="center">
+<img src="https://github.com/user-attachments/assets/c66c5b76-c0e0-47b2-9bb5-87f9f11aa3d1">
+</div>
 
 Where:
 - ln(p/1-p) is the probability outcome
@@ -39,7 +41,7 @@ The dataset above is the Menlo Therapeutics Stock prices and number of exchanges
 
 ### Objectives
 
-  The objective of implementingg Linear Regression model in this dataset is to:
+  The objective of implementing Linear Regression model in this dataset is to:
 
 1.  Predict the closed value of Menlo Therapeutics Stock
 2.  Create and train the dataset  in Linear Regression Model
@@ -88,7 +90,7 @@ The figure below is all the necessary libraries, modules and class to be used in
 
 ![Screenshot 2024-10-28 092757](https://github.com/user-attachments/assets/e06c5a34-352e-4fc5-ab76-524ef1d1c62b)
 
-To impliment the linear regression model, we first get the test and train variables with the test variables being 20% of the whole dataset.
+To implement the linear regression model, we first get the test and train variables with the test variables being 20% of the whole dataset.
 
 ![image](https://github.com/user-attachments/assets/d1707446-aefb-4b0a-bf81-d321c0ebc17b)
 
@@ -102,9 +104,10 @@ And after that, we fit the train variables into the model created to begin predi
 ### Evaluation Metrics and Interpretation
 #### R-Squared & Adj R-Squared
 Below is the computation for the R-Squared which results in 0.9991818280984028 and the adjusted R-Squared
-
-![image](https://github.com/user-attachments/assets/53d9fd7e-318c-4332-aaa4-2aa8e4e68db3)
-![image](https://github.com/user-attachments/assets/d2a1c8bb-0fbf-4aa0-9396-b1ff1bbcaae2)
+<div align="center">
+<img src="https://github.com/user-attachments/assets/53d9fd7e-318c-4332-aaa4-2aa8e4e68db3">
+<img src="https://github.com/user-attachments/assets/d2a1c8bb-0fbf-4aa0-9396-b1ff1bbcaae2">
+</div>
 
 Based on the evaluation of metrics results, the R-Squared score of 0.999181828098402 means that the model is either very good or suspicious. The score itself is very close to one which makes it questionable but it also is in the range where we can say that the model is reliable.
 
@@ -116,13 +119,15 @@ The Means Squared Error resulted in 0.04613760646767291 means that there is very
 
 #### Noisy Model
 Since the interpretation of the reslut in R-Squared is suspicious enought, we add noise to the dataset that way it can lower the R-Squared. The figure below is the addition of 1.5 noise level in the dataset.
-
-![image](https://github.com/user-attachments/assets/a5c5bd79-055c-4e86-85d7-d745bdbd12cf)
+<div align="center">
+<img src="https://github.com/user-attachments/assets/a5c5bd79-055c-4e86-85d7-d745bdbd12cf">
+</div>
 
 After that, we trained and tested the model anew and calculate for the noised R-Squared and MSE:
-
-![image](https://github.com/user-attachments/assets/438a8e92-d780-4169-9090-6165e928be93)
-![image](https://github.com/user-attachments/assets/3d64531f-0494-4455-8dee-6211efc98407)
+<div align="center">
+<img src="https://github.com/user-attachments/assets/438a8e92-d780-4169-9090-6165e928be93">
+<img src="https://github.com/user-attachments/assets/3d64531f-0494-4455-8dee-6211efc98407">
+</div>
 
 Based on the result of the noised R-Squared and MSE, it now result to be a reliable model getting a score on R-Squared varying from 0.96 - 0.94 and a score of MSE of 1.7 - 3. Due to the introduction of the noise, the results varies every calculation unlike the clean dataset in whiche there are no randomness introduced.
 
@@ -136,7 +141,7 @@ Though the predicted output may be almost similar in both plots they are differe
 
 The linear regression model fits good in this stock price prediction as it results in a highly accurate prediction, though it may seem queationable to to the analyist who may use this but it is undeniable that the prediction power of this model in this specific dataset is very good.
 
-Moreoover, the addition of the noise in the dataset makes the result better because it is not that high but the model became more suspicious as the predicted values does not change that  muchor in shorter term, the noise almost didn't affect the predicted output. While adding noise can be useful for testing model robustness or simulating real-world scenarios like this stock price prediction, it makes the dataset less reliable. If the goal is to build a model for practical use, it's generally best to work with clean, high-quality data.
+Moreover, the addition of the noise in the dataset makes the result better because it is not that high but the model became more suspicious as the predicted values does not change that  much or in shorter term, the noise almost didn't affect the predicted output. While adding noise can be useful for testing model robustness or simulating real-world scenarios like this stock price prediction, it makes the dataset less reliable. If the goal is to build a model for practical use, it's generally best to work with clean, high-quality data.
 
 
 
@@ -147,8 +152,9 @@ Moreoover, the addition of the noise in the dataset makes the result better beca
 
 ## **Logistics Reggression Analysis**
 ### **Iris Flower Classification**
-
-<img width="311" alt="dataset preview" src="https://github.com/user-attachments/assets/119c949b-03f2-401a-be8c-88668dde355b">
+<div align="center">
+<img width="600" img height="700" alt="dataset preview" src="https://github.com/user-attachments/assets/119c949b-03f2-401a-be8c-88668dde355b">
+</div>
 
 The dataset above is about classifying three species of iris flowers based on: 
 #### - Sepal Length 
@@ -190,8 +196,9 @@ To implement the linear regression model, we first get the test and train variab
 ![image](https://github.com/user-attachments/assets/84fa262f-d6d6-4bfb-b5a6-36451f278893)
 
 After getting the test and train variables, we fit it to a standard scale to even out the importance of each variables. This standardscaler does exactly what it is called as it implements a standard for each value so that it would be more suitable and efficient for finding patterns and help train the model.
-
-![image](https://github.com/user-attachments/assets/92a56a7c-f2e6-451d-8383-02cbed921313)
+<div align="center">
+<img src="https://github.com/user-attachments/assets/92a56a7c-f2e6-451d-8383-02cbed921313">
+</div>
 
 Then we are now able to fit our train variables to the logistics regression with an iteration of 1000 to find the optimal solution. More iterations can help the model improve training the model which in turn leads to mare accurate predictions. Since logistics regression on scikitlearn can already handle multinomial logistics regression, this can only mean that we don't have to do anything special anymore.
 
@@ -204,7 +211,9 @@ Then we are now able to fit our train variables to the logistics regression with
 ### Accuracy Score
 
 The function accuracy score function from scikitlearn resulted to 0.93... which means that the model implemented on the iris classification is very good. These scores can be referenced from this table.
+<div align="center">
 <img width="435" alt="table for accuracy" src="https://github.com/user-attachments/assets/f12f0e23-ce5e-4a29-9686-c265c57c63f8">
+</div>
 
 ![image](https://github.com/user-attachments/assets/a33e0092-2b66-4338-af57-b5b687ebecbc)
 ![image](https://github.com/user-attachments/assets/4ab5ec94-54a0-438f-8880-71499a583887)
@@ -217,13 +226,13 @@ The figure below is the confusion matrix that we plotted and the manual computat
 
 ![image](https://github.com/user-attachments/assets/9dc63c44-4f14-4de6-a961-484be77d215e)
 
-As shown on the image,
+As shown on the image,  
 1st Row:
-Iris-setosa had 14 instances of being correctly predicted and 0 instances for being predicted other than its true label.
+Iris-setosa had 14 instances of being correctly predicted and 0 instances for being predicted other than its true label.  
 2nd Row:
-Iris-veriscolor had 15 instances of being correctly predicted and 0 instances for being incorrectly predicted as Iris-setosa. However, it had 1 instance of being incorrectly predicted as iris-virginica.
+Iris-veriscolor had 15 instances of being correctly predicted and 0 instances for being incorrectly predicted as Iris-setosa. However, it had 1 instance of being incorrectly predicted as iris-virginica.  
 3rd Row:
-Iris-virginica had 13 instances of being correctly predicted and 0 instances for being incorrectly predicted as Iris-setosa. However, it had 2 instances of being incorrectly predicted as Iris-versicolor.
+Iris-virginica had 13 instances of being correctly predicted and 0 instances for being incorrectly predicted as Iris-setosa. However, it had 2 instances of being incorrectly predicted as Iris-versicolor.  
 
 This total number of instances, 45, is derived from the command test_size=0.3 which means that 30% of the total rows of data (150) will have a result of 45 instances. However, in some cases, even random_state can affect this instances.
 
@@ -231,32 +240,32 @@ This total number of instances, 45, is derived from the command test_size=0.3 wh
 ![image](https://github.com/user-attachments/assets/af3cdf19-7822-4233-910a-cdd9516c9a55)
   After successfully creating the model and training it for prediction it will now be evaluated through values measured in percentages (Note: the values shown are interpreted as percentages
   
-**precision** - measures the accuracy of positive predictions.
-Iris-setosa - 1.00 or 100% of the instances were predicted as Iris-setosa corretly.
-Iris-versicolor - 0.88 or 88% of instances were predicted as Iris-versicolor correctly.
-Iris-virginica - 0.93 or 93% of instances were predicted as Iris-virginica correctly.
+**precision** - measures the accuracy of positive predictions.  
+Iris-setosa - 1.00 or 100% of the instances were predicted as Iris-setosa corretly.  
+Iris-versicolor - 0.88 or 88% of instances were predicted as Iris-versicolor correctly.  
+Iris-virginica - 0.93 or 93% of instances were predicted as Iris-virginica correctly.  
+  
+**recall** - measures the model’s ability to identify all relevant instances of the positive class.  
+Iris-setosa - 1.00  or 100% of actual Iris-setosa instances were identified correctly.  
+Iris-versicolor - 0.94 or 94% of actual Iris-versicolor instances were identified correctly.  
+Iris-virginica - 0.87 or 87% of actual Iris-virginica instances were identified correctly.  
 
-**recall** - measures the model’s ability to identify all relevant instances of the positive class.
-Iris-setosa - 1.00  or 100% of actual Iris-setosa instances were identified correctly.
-Iris-versicolor - 0.94 or 94% of actual Iris-versicolor instances were identified correctly.
-Iris-virginica - 0.87 or 87% of actual Iris-virginica instances were identified correctly.
-
-**fi-score** - it is the harmonic mean of precision and recall, balancing the two metrics.
-Iris-setosa - 1.00 or 100%, a perfect score
-Iris-versicolor - 0.91or 91% , pretty okay
-Iris-virginica - 0.91 or 91%, pretty okay as well
-
-
-**support** - it is simply the number of instances found within the confusion matrix which is 14,16,15 for Iris-setosa, Iris-versicolor, and Iris-virginica respectively. totaling to a number of 45 instances. This stays true for the succeding rows for Support
+**fi-score** - it is the harmonic mean of precision and recall, balancing the two metrics.  
+Iris-setosa - 1.00 or 100%, a perfect score  
+Iris-versicolor - 0.91or 91% , pretty okay  
+Iris-virginica - 0.91 or 91%, pretty okay as well  
 
 
-**accuracy** - the overall accuracy of the model which is 0.93 or 93%
-
-**macro avg** - the unweighted average of precision, recall, and F1 score without including support across all classes.
-
-**weighted avg** - the average of precision, recall, and F1 score including support across all classes.
+**support** - it is simply the number of instances found within the confusion matrix which is 14,16,15 for Iris-setosa, Iris-versicolor, and Iris-virginica respectively. totaling to a number of 45 instances. This stays true for the succeding rows for Support  
 
 
+**accuracy** - the overall accuracy of the model which is 0.93 or 93%  
+
+**macro avg** - the unweighted average of precision, recall, and F1 score without including support across all classes.  
+
+**weighted avg** - the average of precision, recall, and F1 score including support across all classes.  
+
+  
 ### Discussion
    This dataset for classifying iris categories has its advantages and disadvantages for implementing machine learning via logistic regression: (1) This dataset has no missing values and each result has its accompanied complete data. (2) The output for classification can only result to three outputs and is not complicated. (3) This dataset is easy to process due its low amount of entries. As for the disadvantages we should know that machine learning improves as more entries are processed and learned by the model, however this model has very few entries (150) and has lot of room for error when implemented on real-life applications. 
    However, after tweaking the code to the programmer's best ability, we were able to find an acceptable and accurate result suitable for the dataset provided and has been a good opportunity for learning and understanding the concepts and application of logistic regression.
@@ -264,4 +273,7 @@ Iris-virginica - 0.91 or 91%, pretty okay as well
 ### Other Notes
   Although this dataset is suitable for Logistic Regression since the data is complete as they are labeled, Clustering can also be applied as it even helps process the data more efficiently since clustering can operate even without labels. As a form of unsupervised machine learning, it can find natural patterns and key differences that logistic regression may not be able to in some cases.
 
-
+References:
+These references were used for constructing plot diagrams and model adjustments.
+https://www.kaggle.com/code/sulaniishara/iris-dataset-analysis-classification#Logistic-Regression
+https://www.kaggle.com/code/jeffreycrawford/logistic-regression-with-iris-dataset

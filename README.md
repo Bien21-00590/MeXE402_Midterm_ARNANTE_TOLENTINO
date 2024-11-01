@@ -227,11 +227,11 @@ The figure below is the confusion matrix that we plotted and the manual computat
 ![image](https://github.com/user-attachments/assets/9dc63c44-4f14-4de6-a961-484be77d215e)
 
 As shown on the image,  
-1st Row:
+**1st Row:**
 Iris-setosa had 14 instances of being correctly predicted and 0 instances for being predicted other than its true label.  
-2nd Row:
+**2nd Row:**
 Iris-veriscolor had 15 instances of being correctly predicted and 0 instances for being incorrectly predicted as Iris-setosa. However, it had 1 instance of being incorrectly predicted as iris-virginica.  
-3rd Row:
+**3rd Row:**
 Iris-virginica had 13 instances of being correctly predicted and 0 instances for being incorrectly predicted as Iris-setosa. However, it had 2 instances of being incorrectly predicted as Iris-versicolor.  
 
 This total number of instances, 45, is derived from the command test_size=0.3 which means that 30% of the total rows of data (150) will have a result of 45 instances. However, in some cases, even random_state can affect this instances.

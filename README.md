@@ -88,6 +88,17 @@ The figure below is all the necessary libraries, modules and class to be used in
 
 ![Screenshot 2024-10-28 092757](https://github.com/user-attachments/assets/e06c5a34-352e-4fc5-ab76-524ef1d1c62b)
 
+To impliment the linear regression model, we first get the test and train variables with the test variables being 20% of the whole dataset.
+
+![image](https://github.com/user-attachments/assets/d1707446-aefb-4b0a-bf81-d321c0ebc17b)
+
+And after that, we fit the train variables into the model created to begin prediction.
+
+![image](https://github.com/user-attachments/assets/07ff9d45-01f1-43ce-9155-5797fc2d3cc7)
+![image](https://github.com/user-attachments/assets/52ab3dcb-5238-4519-8cb9-8f1316b8e480)
+
+
+
 ### Evaluation Metrics and Interpretation
 #### R-Squared & Adj R-Squared
 Below is the computation for the R-Squared which results in 0.9991818280984028 and the adjusted R-Squared
@@ -169,19 +180,41 @@ These histograms showcase the range and frequency of values for each descriptive
 
 ### Model Implementation
 
+The figure below is all the necessary libraries, modules and class to be used in this dataset and its functions. 
+
 ![image](https://github.com/user-attachments/assets/88fa7731-9249-4782-8899-d80f3ea43f10)
+
+To impliment the linear regression model, we first get the test and train variables but this time, the test variables will be 30% of the whole dataset due to the small size of the data only being 150 sets, lowering the test variable percentage can result in unrealistic predictions.
+
+![image](https://github.com/user-attachments/assets/84fa262f-d6d6-4bfb-b5a6-36451f278893)
+
+After getting the test and train variables, we fit it to a standard scale to even out the importance of each variables.
+
+![image](https://github.com/user-attachments/assets/92a56a7c-f2e6-451d-8383-02cbed921313)
+
+Then we are now able to fit our train variables to the logistics regression with an iretarion of 1000 to find the optimal solution. Since logistics regression on scikitlearn can already handle multinomial logistics regression, this can only mean that we dont have to do anything special anymore.
+
+![image](https://github.com/user-attachments/assets/e25f2594-aad5-48a8-9b90-0d4ef127e16c)
+![image](https://github.com/user-attachments/assets/690d855f-dbc2-4c8a-8b24-1f50a35c4137)
+
 
 ### Evaluation of Metrics and Interpretation
 
-![image](https://github.com/user-attachments/assets/4ab5ec94-54a0-438f-8880-71499a583887)
+### Accuracy Score
+
+The function accuracy score function from scikitlearn resulted to 0.93... which means that the model implemented on the iris classification is very good.
+
 ![image](https://github.com/user-attachments/assets/a33e0092-2b66-4338-af57-b5b687ebecbc)
 
 
 ### Visualization
 
+#### Confusion Matrix
+
+The figure below is the confusion matrix that we plotted and the manual computation of the accuracy score. Since the manual computation is equal to the scikitlearn function, it is safe to say that the score is reliable.
 
 ![image](https://github.com/user-attachments/assets/9dc63c44-4f14-4de6-a961-484be77d215e)
-
+![image](https://github.com/user-attachments/assets/4ab5ec94-54a0-438f-8880-71499a583887)
 
   After successfully creating the model and making it predict, it will now be evaluated on the following parameters:
   

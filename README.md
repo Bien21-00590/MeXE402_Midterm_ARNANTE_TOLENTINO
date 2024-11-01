@@ -56,13 +56,13 @@ The Figure 1.a is the overall data of stock prices of Menlo Therapeutics and the
 ![Screenshot 2024-10-18 181654](https://github.com/user-attachments/assets/a471f718-564f-4230-8f24-1739546a9ee1)
 (Figure 1.a)
 
-The prediction that we are going to make is the close value of the stock price since according to Investopedia [2], Volume is an important indicator in technical analysis because it measures the relative significance of a market move. The higher the volume during a price move, the more significant the move; the lower the volume during a price move, the less significant the move. 
+The prediction that we are going to make is the close value of the stock price since according to Investopedia, Volume is an important indicator in technical analysis because it measures the relative significance of a market move. The higher the volume during a price move, the more significant the move; the lower the volume during a price move, the less significant the move. 
 Based on that, moving the close column to the last to serve as the dependent variable on Figure 1.b.
 
 ![Screenshot 2024-10-18 181725](https://github.com/user-attachments/assets/2cc7d3a2-05cd-4239-815f-1d850613d0ad)
 (Figure 1.b)
 
-Taking a closer look, the adjusted close is similar to the close so a comparison test is then made on Figure 1.c. According to Groww [3], closing price simply refers to the cost of shares at the end of the day, the adjusted closing price takes dividends, stock splits, and new stock offerings.
+Taking a closer look, the adjusted close is similar to the close so a comparison test is then made on Figure 1.c. According to Groww, closing price simply refers to the cost of shares at the end of the day, the adjusted closing price takes dividends, stock splits, and new stock offerings.
 
 ![Screenshot 2024-10-18 181931](https://github.com/user-attachments/assets/40a75f28-38ef-4c8a-a1c7-e5f5886ee02d)
 (Figure 1.c)
@@ -273,7 +273,16 @@ Iris-virginica - 0.91 or 91%, pretty okay as well
 ### Other Notes
   Although this dataset is suitable for Logistic Regression since the data is complete as they are labeled, Clustering can also be applied as it even helps process the data more efficiently since clustering can operate even without labels. As a form of unsupervised machine learning, it can find natural patterns and key differences that logistic regression may not be able to in some cases.
 
+
 References:
 These references were used for constructing plot diagrams and model adjustments.
+
+https://help.indiainfoline.com/portal/en/kb/articles/what-are-open-high-low-prev-close-prices
+
+https://www.investopedia.com/terms/v/volume.asp#:~:text=Key%20Takeaways&text=Volume%20is%20an%20important%20indicator,the%20less%20significant%20the%20move
+
+https://groww.in/p/adjusted-closing-price 
+
 https://www.kaggle.com/code/sulaniishara/iris-dataset-analysis-classification#Logistic-Regression
+
 https://www.kaggle.com/code/jeffreycrawford/logistic-regression-with-iris-dataset

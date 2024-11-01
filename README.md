@@ -168,15 +168,16 @@ The dataset above is about classifying three species of iris flowers based on:
 
 ### **Data Preprocessing**
 
-  The csv file for Iris classification contains the following columns: Id, Sepal Length, Sepal Width, Petal Length, Petal Width, and Species. The Id column can be excluded for data machine learning since it only serves as a column number and has no significant impact on data prediction. This column will be later excluded in training and prediction via this line of code.
-  
-<img width="754" alt="drop" src="https://github.com/user-attachments/assets/2c03dca0-37d7-476d-9449-0bd46ca09eb2">
+  The csv file for Iris classification contains the following columns: Id, Sepal Length, Sepal Width, Petal Length, Petal Width, and Species. To inspect the data without alternating with other programs that view datasetes, we can use commands data.info or dataset.head or even similar commands to view datasets on vscode itself however, through this method we can only observe a shortened overview of the dataset
+
+<img width="747" alt="display data" src="https://github.com/user-attachments/assets/f6b305ab-9e09-4e1d-ae43-fc515b6d17b4">
+<img width="754" alt="display info" src="https://github.com/user-attachments/assets/d20dbd14-2a7c-4f61-b448-6b7197e06870">
 
 ### **Data Showcasing**
 
-![image](https://github.com/user-attachments/assets/f7361975-9ce7-4842-8f19-e2b83115381d)
+<img width="715" alt="histograms" src="https://github.com/user-attachments/assets/ef7e1d47-344e-4cfb-843d-eb223d8582a2">
 
-These histograms showcase the range and frequency of values for each descriptive column. On observation, there is a common grounds for each classification on the histogram shown which hyothetically, provide difference  for the model in prediction.   
+These histograms showcase the range and frequency of values for each descriptive column. On observation, there are commonalities for each classification and some key differences on the histograms shown which hyothetically, provide variations and unepredictability when simply done through human guessing which is then done otherwise by the succeeding training model.
 
 ### Model Implementation
 
@@ -184,15 +185,15 @@ The figure below is all the necessary libraries, modules and class to be used in
 
 ![image](https://github.com/user-attachments/assets/88fa7731-9249-4782-8899-d80f3ea43f10)
 
-To impliment the linear regression model, we first get the test and train variables but this time, the test variables will be 30% of the whole dataset due to the small size of the data only being 150 sets, lowering the test variable percentage can result in unrealistic predictions.
+To implement the linear regression model, we first get the test and train variables but this time, the test variables will be 30% of the whole dataset due to the small size of the data only being 150 sets, lowering the test variable percentage can result in unrealistic predictions.
 
 ![image](https://github.com/user-attachments/assets/84fa262f-d6d6-4bfb-b5a6-36451f278893)
 
-After getting the test and train variables, we fit it to a standard scale to even out the importance of each variables.
+After getting the test and train variables, we fit it to a standard scale to even out the importance of each variables. This standardscaler does exactly what it is called as it implements a standard for each value so that it would be more suitable and efficient for finding patterns and help train the model.
 
 ![image](https://github.com/user-attachments/assets/92a56a7c-f2e6-451d-8383-02cbed921313)
 
-Then we are now able to fit our train variables to the logistics regression with an iretarion of 1000 to find the optimal solution. Since logistics regression on scikitlearn can already handle multinomial logistics regression, this can only mean that we dont have to do anything special anymore.
+Then we are now able to fit our train variables to the logistics regression with an iteration of 1000 to find the optimal solution. More iterations can help the model improve training the model which in turn leads to mare accurate predictions. Since logistics regression on scikitlearn can already handle multinomial logistics regression, this can only mean that we don't have to do anything special anymore.
 
 ![image](https://github.com/user-attachments/assets/e25f2594-aad5-48a8-9b90-0d4ef127e16c)
 ![image](https://github.com/user-attachments/assets/690d855f-dbc2-4c8a-8b24-1f50a35c4137)
@@ -202,10 +203,11 @@ Then we are now able to fit our train variables to the logistics regression with
 
 ### Accuracy Score
 
-The function accuracy score function from scikitlearn resulted to 0.93... which means that the model implemented on the iris classification is very good.
+The function accuracy score function from scikitlearn resulted to 0.93... which means that the model implemented on the iris classification is very good. These scores can be referenced from this table.
+<img width="435" alt="table for accuracy" src="https://github.com/user-attachments/assets/f12f0e23-ce5e-4a29-9686-c265c57c63f8">
 
 ![image](https://github.com/user-attachments/assets/a33e0092-2b66-4338-af57-b5b687ebecbc)
-
+![image](https://github.com/user-attachments/assets/4ab5ec94-54a0-438f-8880-71499a583887)
 
 ### Visualization
 
@@ -214,27 +216,52 @@ The function accuracy score function from scikitlearn resulted to 0.93... which 
 The figure below is the confusion matrix that we plotted and the manual computation of the accuracy score. Since the manual computation is equal to the scikitlearn function, it is safe to say that the score is reliable.
 
 ![image](https://github.com/user-attachments/assets/9dc63c44-4f14-4de6-a961-484be77d215e)
-![image](https://github.com/user-attachments/assets/4ab5ec94-54a0-438f-8880-71499a583887)
 
-  After successfully creating the model and making it predict, it will now be evaluated on the following parameters:
-  
-**precision** - measures the accuracy of positive predictions.
+As shown on the image,
+1st Row:
+Iris-setosa had 14 instances of being correctly predicted and 0 instances for being predicted other than its true label.
+2nd Row:
+Iris-veriscolor had 15 instances of being correctly predicted and 0 instances for being incorrectly predicted as Iris-setosa. However, it had 1 instance of being incorrectly predicted as iris-virginica.
+3rd Row:
+Iris-virginica had 13 instances of being correctly predicted and 0 instances for being incorrectly predicted as Iris-setosa. However, it had 2 instances of being incorrectly predicted as Iris-versicolor.
 
-**recall** - measures the model’s ability to identify all relevant instances of the positive class.
-
-**fi-score** - it is the harmonic mean of precision and recall, balancing the two metrics.
-
-**support** - it is the number of true instances for each class in the dataset.
-
-**accuracy** - the overall percentage of correctly classified instances out of all instances.
-
-**macro avg** - the unweighted average of precision, recall, and F1 score across all classes.
-
-**weighted avg** - the average of precision, recall, and F1 score across all classes, weighted by each class’s support
+This total number of instances, 45, is derived from the command test_size=0.3 which means that 30% of the total rows of data (150) will have a result of 45 instances. However, in some cases, even random_state can affect this instances.
 
 
 ![image](https://github.com/user-attachments/assets/af3cdf19-7822-4233-910a-cdd9516c9a55)
+  After successfully creating the model and training it for prediction it will now be evaluated through values measured in percentages (Note: the values shown are interpreted as percentages
+  
+**precision** - measures the accuracy of positive predictions.
+Iris-setosa - 1.00 or 100% of the instances were predicted as Iris-setosa corretly.
+Iris-versicolor - 0.88 or 88% of instances were predicted as Iris-versicolor correctly.
+Iris-virginica - 0.93 or 93% of instances were predicted as Iris-virginica correctly.
+
+**recall** - measures the model’s ability to identify all relevant instances of the positive class.
+Iris-setosa - 1.00  or 100% of actual Iris-setosa instances were identified correctly.
+Iris-versicolor - 0.94 or 94% of actual Iris-versicolor instances were identified correctly.
+Iris-virginica - 0.87 or 87% of actual Iris-virginica instances were identified correctly.
+
+**fi-score** - it is the harmonic mean of precision and recall, balancing the two metrics.
+Iris-setosa - 1.00 or 100%, a perfect score
+Iris-versicolor - 0.91or 91% , pretty okay
+Iris-virginica - 0.91 or 91%, pretty okay as well
+
+
+**support** - it is simply the number of instances found within the confusion matrix which is 14,16,15 for Iris-setosa, Iris-versicolor, and Iris-virginica respectively. totaling to a number of 45 instances. This stays true for the succeding rows for Support
+
+
+**accuracy** - the overall accuracy of the model which is 0.93 or 93%
+
+**macro avg** - the unweighted average of precision, recall, and F1 score without including support across all classes.
+
+**weighted avg** - the average of precision, recall, and F1 score including support across all classes.
+
 
 ### Discussion
+   This dataset for classifying iris categories has its advantages and disadvantages for implementing machine learning via logistic regression: (1) This dataset has no missing values and each result has its accompanied complete data. (2) The output for classification can only result to three outputs and is not complicated. (3) This dataset is easy to process due its low amount of entries. As for the disadvantages we should know that machine learning improves as more entries are processed and learned by the model, however this model has very few entries (150) and has lot of room for error when implemented on real-life applications. 
+   However, after tweaking the code to the programmer's best ability, we were able to find an acceptable and accurate result suitable for the dataset provided and has been a good opportunity for learning and understanding the concepts and application of logistic regression.
+
+### Other Notes
+  Although this dataset is suitable for Logistic Regression since the data is complete as they are labeled, Clustering can also be applied as it even helps process the data more efficiently since clustering can operate even without labels. As a form of unsupervised machine learning, it can find natural patterns and key differences that logistic regression may not be able to in some cases.
 
 
